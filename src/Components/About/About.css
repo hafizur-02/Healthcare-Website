@@ -1,0 +1,177 @@
+.about
+{
+    width: 100%;
+    margin: 6rem 0;
+}
+
+.about_container
+{
+    width: 75%;
+    margin:  0 auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.about_container .about_right 
+{
+    margin-left: 2rem;
+}
+.about_container .about_right .intro
+{
+    color: var(--color-light);
+    font-size: .9rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-bottom: .2rem;
+}
+
+.about_container .about_right h1
+{
+    color: var(--color-secondary);
+    font-size: 2.1rem;
+    font-weight: 700;
+    margin-bottom: 1.4rem;
+}
+
+.about_container .about_right .needs
+{
+   display: grid;
+   grid-template-columns: 50% 50%;
+   margin: 1.2rem 0;
+}
+
+.about_container .about_right .needs_left , .needs_right
+{
+   display: flex;
+   align-items: center;
+   gap: 1.5rem;
+   padding: 0 1rem;
+}
+
+.about_container .about_right .needs_left , .needs_right .icon
+{
+    color: var(--color-primary);
+   font-size: 2.5rem;
+}
+
+.about_container .about_right h3
+{
+   color: var(--color-secondary); 
+   font-size: 1.2rem;
+   font-weight: 700;
+}
+
+.about_container .about_right .text
+{
+    color: var(--color-light);
+
+}
+
+.about_container .about_right .about_btn
+{
+        padding: .6rem 2rem;
+        text-transform: capitalize;
+        font-size: 1rem;
+        font-weight: 500;
+        transition: all 0.5s ease-in-out;
+        color: var(--color-white);
+        background-color: var(--color-primary);
+        margin-top: 1rem;
+}
+
+.about_container .about_right .about_btn:hover 
+{
+    background-color: var(--color-secondary);
+}
+
+/*  media query */
+@media screen and ( max-width: 1050px ) {
+    .about_container
+    {
+        width: 80%;
+        grid-template-columns: 1fr;
+    }
+
+    .about_container .about_left .about_image 
+    {
+        width: 80%;
+    }
+
+    .about_container .about_left .about_image img
+    {
+        width: 100%;
+    }
+
+    .about_container .about_right 
+    {
+        margin-top: 2rem;
+    }
+
+    .about_container .about_right h1
+    {
+        font-size: 2rem;
+    }
+}
+
+@media screen and ( max-width:600px) {
+    .about
+    {
+        margin-top: 20rem;
+    }
+    .about_container
+    {
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+    .about_container .about_left .about_image 
+    {
+        width: 80%;
+    }
+    .about_container .about_left .about_image img
+    {
+        width: 100%;
+    }
+
+    .about_container .about_right 
+    {
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+
+    .about_container .about_right h1
+    {
+        font-size: 1.5rem;
+    }
+    .about_container .about_right .needs
+    {
+       grid-template-columns: 1fr;
+    }
+    
+    .about_container .about_right .needs_left
+    {
+        margin-bottom: 1rem;
+    }
+
+    .about_container .about_right .needs_left , .needs_right
+    {
+       display: flex;
+       align-items: center;
+       gap: 1rem;
+       padding: 0 0;
+    }
+    
+    .about_container .about_right .needs_left , .needs_right .icon
+    {
+       font-size: 2.2rem;
+    }
+    
+    .about_container .about_right h3
+    {
+       font-size: 1rem;
+    }
+
+    .about_container .about_right .about_btn
+    {
+        margin-bottom: 1rem;
+    }
+}

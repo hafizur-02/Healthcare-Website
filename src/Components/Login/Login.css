@@ -1,0 +1,233 @@
+.login
+{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../images/pexels-karolina-grabowska-4386466.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:left center;
+}
+
+.login .login_container
+{
+    width: 50%;
+    margin:  0 auto;
+    position: relative;
+    top: 8rem;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.login .login_container .login_left 
+{
+    background-color: rgba(38, 43, 72, 0.92);
+    padding: 4rem 0 4rem 2rem;
+    border-radius:.3rem 0 0 .3rem;
+}
+
+.login .login_container .login_left img
+{
+    width: 70%;
+}
+
+.login .login_container .login_left p
+{
+   color: var(--color-light);
+   font-size: 1rem;
+   line-height: 1.2rem;
+   margin: 2rem 0 1.5rem 0;
+}
+
+.login .login_container .login_left .btnn
+{
+    color: var(--color-white);
+    padding: .5rem 0rem;
+    margin-bottom: 1rem;
+    display: block;
+    width: 90%;
+    border-radius: .3rem;
+    font-size: .8rem;
+}
+
+.login .login_container .login_left .btnn .icon
+{
+    color: var(--color-white);
+    font-size: .9rem;
+    margin-right: .6rem;
+}
+
+.login .login_container .login_left .facebook_btn
+{
+    background-color: #4267B2;
+}
+
+.login .login_container .login_left .google_btn
+{
+    background-color: rgb(219, 68, 55);
+}
+
+.login .login_container .login_right
+{
+    background-color:var(--color-white);
+    padding: 4rem 0 4rem 2rem;
+    border-radius: 0 0.3rem 0.3rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.login .login_container .login_right input
+{
+   display: block;
+   width: 85%;
+   border-bottom: 1px solid var(--color-light);
+   padding: .4rem 1rem;
+}
+
+.login .login_container .login_right .forgot_btn
+{
+    display: block;
+    margin-top: 1rem;
+}
+
+.login .login_container .login_right .email_btn
+{
+    display: block;
+    width: 60%;
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    border-radius: .3rem;
+    margin-top: 2rem;
+    padding: .5rem 0;
+    box-shadow: 0px 2px 3px #9c9c9c;
+}
+
+.login .login_container .login_right .new_user_btn
+{
+    margin-top: 1rem;
+    color: var(--color-white);
+    background-color: var(--color-secondary);
+    padding: .3rem 1.8rem;
+    border-radius: .3rem;
+}
+
+.login .login_container .login_right .have_account_btn
+{
+    margin: 0 0 0 3rem;
+    color: var(--color-white);
+    background-color: #013340;
+    padding: .3rem 1.8rem;
+    border-radius: .3rem;
+}
+
+.login .login_container .login_right .sign_in 
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+   
+}
+
+.login .login_container .login_right .sign_up_form
+{
+   margin: 4rem  1rem 1rem 1rem;
+}
+
+.login .login_container .login_right .sign_up_form .sign_up_btn
+{
+   margin-left: 2rem;
+}
+
+.login .login_container .login_right form .signin_input
+{
+   display: block;
+   width: 85%;
+   margin: 0 auto;
+   border-bottom: 1px solid var(--color-light);
+   background-color: transparent;
+}
+
+
+
+
+.sign_in_show
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--color-white);
+    visibility: visible;
+    transition: all .5s ease;
+}
+
+@media screen and ( max-width:1050px ) {
+    .login .login_container
+    {
+        width: 70%;
+        grid-template-columns: 1fr;
+        top: 1rem;
+    }
+    .login .login_container .login_left 
+    {
+        padding: 2rem 0 1rem 2rem;
+    }
+    
+    .login .login_container .login_left img
+    {
+        width: 50%;
+    }
+    
+    .login .login_container .login_left p
+    {
+       font-size: 1rem;
+       margin: 1rem 0 1.5rem 0;
+    }
+
+    .login .login_container .login_right
+    {
+        padding: 2rem 0 2rem 2rem;
+    }
+    
+    .login .login_container .login_right .forgot_btn
+    {
+        display: block;
+        margin-top: 1rem;
+    }
+    
+    .login .login_container .login_right .email_btn
+    {
+        margin-top: 1rem;
+    }
+    
+}
+@media screen and ( max-width:600px ){
+    .login .login_container
+    {
+        width: 90%;
+        margin-top: 5rem;
+    }
+
+    .login .login_container .login_left 
+    {
+        border-radius:.3rem .3rem 0 .0;
+    }
+
+    .login .login_container .login_right 
+    {
+        border-radius:0 0 .3rem .3rem;
+    }
+
+    .login .login_container .login_right input
+    {
+       padding: .1rem 1rem;
+    }
+    
+    .login .login_container .login_right .sign_up_form
+    {
+       margin: 1.5rem  1rem 1rem 1rem;
+    }
+}

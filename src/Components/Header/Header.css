@@ -1,0 +1,151 @@
+.header
+{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../images/vectorpage-banner-01.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+    overflow: hidden;
+}
+
+.header_container
+{
+    width: 75%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    position: relative;
+    top: 10rem;
+}
+.header_container .header_left .header_left_icon
+{
+    display: flex;
+    align-items: flex-end;
+}
+
+.header_container .header_left .header_left_icon p
+{
+    color:var(--color-secondary);
+   margin: 0;
+   font-size: 0.9rem;
+   text-transform: uppercase;
+   padding-left: 1rem;
+}
+
+.header_container .header_left h1
+{
+    color: var(--color-secondary);
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 4rem;
+    margin: 1rem 0 1.5rem 0;
+}
+
+.header_container .header_left p
+{
+    color: var(--color-light);
+    margin-bottom: 2rem;
+}
+.header_container .header_left .header_btn1 , .header_btn2
+{
+    padding: .6rem 2rem;
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.5s ease-in-out;
+}
+.header_container .header_left .header_btn1 
+{
+    color: var(--color-white);
+    background-color: var(--color-primary);
+}
+.header_container .header_left .header_btn1:hover 
+{
+    background-color: var(--color-secondary);
+}
+.header_container .header_left .header_btn2 
+{
+    color: var(--color-secondary);
+    background-color: transparent ;
+    outline: 1px solid var(--color-secondary);
+    margin-left: 1rem;
+}
+.header_container .header_left .header_btn2:hover 
+{
+    color: var(--color-white);
+    background-color: var(--color-secondary);
+}
+
+.header_container .header_right .header_image img
+{
+    width: 44rem;
+}
+@media screen and (max-width:1050px) {
+    .header
+    {
+        overflow: visible;
+    }
+    .header_container
+    {
+        width: 85%;
+        grid-template-columns:1fr;
+        top: 7rem;
+    }
+    
+    .header_container .header_left 
+    {
+        order: 2;
+    }
+    .header_container .header_rigth 
+    {
+          order:1;
+    }  
+    
+    .header_container .header_right .header_image img
+    {
+        width: 100%;
+        margin-bottom: 4rem;
+    }
+}
+
+@media screen and ( max-width:600px) {
+    .header_container
+    {
+        width: 90%;
+        grid-template-columns: 1fr;
+        top: 7rem;
+        padding-bottom: 1rem;
+    }
+
+    .header_container .header_left .header_left_icon img
+    {
+        display: none;
+    }
+    
+    .header_container .header_left .header_left_icon p
+    {
+       padding: 0;
+    }
+    
+    .header_container .header_left h1
+    {
+        font-size: 2rem;
+        line-height: 2.6rem;
+    }
+
+    .header_container .header_left .header_btn1 , .header_btn2
+    {
+        padding: .4rem 1.5rem;
+    }
+    .header_container .header_left .header_btn1 
+    {
+        margin-bottom: 1rem;
+    }
+
+    .header_container .header_left .header_btn2 
+    {
+        margin-left: 0rem;
+    }
+}

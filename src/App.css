@@ -1,0 +1,25 @@
+/*  google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@300;400;500;600;700;800;900&display=swap');
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+:root{
+    --color-white: #fff;
+    --color-dark: #000 ;
+    --color-light: #9DABAF;
+    --color-primary: #01d6a3 ;
+    --color-secondary:#033b4a ;
+    --color-success:#ffdd44 ;
+}
+body
+{
+    font-family: 'Saira', sans-serif;
+}

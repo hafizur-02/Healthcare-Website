@@ -1,0 +1,54 @@
+.serviceDetails
+{
+    width: 100%;
+    padding: 7rem 0 2rem 0;
+}
+
+.serviceDetails .serviceDetails_container
+{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.serviceDetails .serviceDetails_container .serviceDetails_img
+{
+    width: 60%;
+    margin-bottom: 2rem;
+}
+
+.serviceDetails .serviceDetails_container .serviceDetails_img img
+{
+    width: 100%;
+    height: auto;
+}
+
+.serviceDetails .serviceDetails_container h3
+{
+    color: var(--color-primary);
+}
+
+.serviceDetails .serviceDetails_container p
+{
+    color: var(--color-light);
+}
+
+.serviceDetails .serviceDetails_container .serviceDetails_btn
+{
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    margin-top: .5rem;
+    padding: .4rem 2rem;
+    border-radius: .3rem;
+    font-weight: 600;
+}
+
+@media screen and (max-width:600px) {
+    .serviceDetails .serviceDetails_container
+    {
+        width: 90%;
+    }
+    .serviceDetails .serviceDetails_container .serviceDetails_img
+    {
+        width: 80%;
+    }
+}

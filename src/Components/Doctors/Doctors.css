@@ -1,0 +1,96 @@
+.doctors
+{
+    width: 100%;
+    padding: 3.5rem 0 2.5rem 0;
+}
+
+.doctors .doctors_container
+{
+    width: 75%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat( 3 , 1fr );
+    gap: 3rem;
+}
+
+.doctors .doctors_container .doctors_content .doctors_content_top
+{
+    display: flex;
+    gap: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.doctors .doctors_container .doctors_content .doctors_content_top .icon
+{
+    color: var(--color-primary);
+    font-size: 2.2rem;
+}
+
+.doctors .doctors_container .doctors_content .doctors_content_top .text h4
+{
+    color: var(--color-secondary);
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.doctors .doctors_container .doctors_content .doctors_content_bottom p
+{
+    color: var(--color-light);
+}
+
+.doctors .doctors_container .doctors_content .doctors_content_top .text span
+{
+    color: var(--color-secondary);
+    font-size: 1.1rem;
+}
+
+/*  media query */
+@media screen and ( max-width:1050px) {
+    .doctors
+    {
+        width: 100%;
+        padding: 3.5rem 0 2.5rem 0;
+    }
+    
+    .doctors .doctors_container
+    {
+        width: 85%;
+        grid-template-columns: repeat( 2 , 1fr );
+    }
+   
+}
+@media screen and (max-width:600px) {
+    .doctors
+    {
+        width: 100%;
+        padding: 3.5rem 0 2.5rem 0;
+    }
+    
+    .doctors .doctors_container
+    {
+        width: 80%;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .doctors .doctors_container .doctors_content .doctors_content_top
+    {
+        gap: 1rem;
+    }
+    
+    .doctors .doctors_container .doctors_content .doctors_content_top .icon
+    {
+        font-size: 1.7rem;
+    }
+    
+    .doctors .doctors_container .doctors_content .doctors_content_top .text h4
+    {
+        font-size: 1.5rem;
+    }
+    
+    .doctors .doctors_container .doctors_content .doctors_content_top .text span
+    {
+        font-size: 1rem;
+    }
+}

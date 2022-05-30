@@ -1,0 +1,126 @@
+.testimonial
+{
+    width: 100%;
+    height: 30rem;
+    background-image: url('../../images/vector-row-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    padding: 5rem 0;
+}
+
+.testimonial_container
+{
+    width: 55%;
+    height: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+ 
+.testimonial_content
+{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.testimonial_content .quote_icon
+{
+    width: 4rem;
+    height: 4rem;
+    border: 2px solid var(--color-dark);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial_content .quote_icon .icon
+{
+    color: var(--color-primary);
+   font-size: 3rem;
+}
+.testimonial_content blockquote
+{
+    color: var(--color-secondary);
+    font-size: 1.1rem;
+    font-weight: 700;
+    line-height: 1.4rem;
+    margin-top: 1rem;
+}
+
+.testimonial_content .star_ratting ul
+{
+    display: flex;
+    padding: 0;
+}
+
+.testimonial_content .star_ratting ul li
+{
+    color: var(--color-success);
+    font-size: .9rem;
+}
+
+.testimonial_content .testimonial_caption h5
+{
+    color: var(--color-secondary);
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.testimonial_content .testimonial_caption label
+{
+    color: var(--color-light);
+    font-size: .9rem;
+}
+/*  media quary */
+@media screen and (max-width:1050px) {
+    .testimonial_container
+    {
+        width: 85%;
+    }
+}
+@media screen and (max-width:600px) {
+    .testimonial
+    {
+        width: 100%;
+        height: 33rem;
+    }
+    .testimonial_container
+    {
+        width: 90%;
+    }
+    .testimonial_content .quote_icon
+    {
+        width: 3rem;
+        height: 3rem;
+    }
+    
+    .testimonial_content .quote_icon .icon
+    {
+       font-size: 2rem;
+    }
+    .testimonial_content blockquote
+    {
+        font-size: 1rem;
+    }
+    
+    .testimonial_content .star_ratting ul li
+    {
+        font-size: .8rem;
+    }
+    
+    .testimonial_content .testimonial_caption 
+    {
+       margin-bottom: 2rem;
+    }
+
+    .testimonial_content .testimonial_caption h5
+    {
+        font-size: 1rem;
+    }
+}
